@@ -1,0 +1,84 @@
+/* Restting the browser default styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: Arial;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading{
+    margin: 10px 0;
+}
+
+
+/* SEARCH BOX SECTION */
+
+.search-section{
+    background-color: #6e9600;
+    padding: 10px;
+    box-shadow: 0 1px 6px 0 rgba(77, 0, 0, 0.38);
+ }
+
+ #search{
+     width: 100%;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 8px;
+ }
+
+ #search:focus{
+     outline: 2px solid #f11b86;
+     border-radius: 5px;
+ }
+
+ 
+ .user-list-section {
+     margin-top: 20px;
+ }
+
+ li{
+     border: 1px solid #dddddd;
+     margin-top: -1px; /* To prevent dounble borders*/
+     background-color: #f6f6f6;
+     font-size: 18px;
+     text-transform: capitalize;
+     padding: 10px;
+ }
+
+ li:hover{
+     background-color: #eeeeee;
+ }
+
+ /* Pill button for username */
+ .username{
+     background-color: #6e9600;
+     color: #ffffff;
+     padding: 6px;
+     font-size: 14px;
+     border-radius: 5px;
+     box-shadow: 0 1px 4px 0 rgba(77, 0, 0, 0.38);
+     cursor: pointer;
+ }
+
+
+ /* MEDIA QUERY FOR LARGE SCREENS */
+ @media (min-width:1000px) {
+     body{
+         width: 50%;
+     }
+     li{
+         font-size: 14px;
+     }
+ }
